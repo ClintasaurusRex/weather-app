@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="h-screen w-screen bg-blue-700">
-        <Header title="Whirl Weather App" />
+        <Header title="Whirly Weather App" />
       </div>
     </>
   );
