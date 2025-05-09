@@ -2,12 +2,15 @@
 export interface WeatherData {
   id: number;
   city: string;
-  temperature: number; // Celsius
+  temperature: number;
   condition: string;
-  humidity: number | null; // Percentage or null if unavailable
-  windSpeed: number | null; // km/h or null if unavailable
-  icon: string; // Icon name or URL
-  date: string; // ISO date string
+  high: number;
+  low: number;
+  feelsLike: number;
+  humidity: number | null;
+  windSpeed: number | null;
+  icon: string;
+  date: string;
 }
 
 export const mockWeatherData: WeatherData[] = [
@@ -16,6 +19,9 @@ export const mockWeatherData: WeatherData[] = [
     city: "Vancouver",
     temperature: 14,
     condition: "Partly cloudy",
+    high: 16,
+    low: 10,
+    feelsLike: 13,
     humidity: null, // No data available
     windSpeed: null, // No data available
     icon: "partly_cloudy",
@@ -26,6 +32,9 @@ export const mockWeatherData: WeatherData[] = [
     city: "Vancouver",
     temperature: 14,
     condition: "Cloudy with sunny breaks",
+    high: 15,
+    low: 9,
+    feelsLike: 12,
     humidity: null, // No data available
     windSpeed: null, // No data available
     icon: "cloud",
@@ -36,6 +45,9 @@ export const mockWeatherData: WeatherData[] = [
     city: "Vancouver",
     temperature: 15,
     condition: "A mix of sun and clouds",
+    high: 17,
+    low: 11,
+    feelsLike: 14,
     humidity: null, // No data available
     windSpeed: null, // No data available
     icon: "partly_cloudy",
@@ -46,6 +58,9 @@ export const mockWeatherData: WeatherData[] = [
     city: "Vancouver",
     temperature: 15,
     condition: "A mix of sun and clouds",
+    high: 16,
+    low: 12,
+    feelsLike: 15,
     humidity: null, // No data available
     windSpeed: null, // No data available
     icon: "partly_cloudy",
