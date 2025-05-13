@@ -1,6 +1,8 @@
+import type { WeatherData } from "../../mockData";
+
 const CurrentWeather: React.FC<{ data: WeatherData }> = ({ data }) => {
   return (
-    <section className="border-2 h-1/8 w-2/3  ">
+    <section className="border-2 rounded-2xl bg-black/70 h-1/8 w-2/3  ">
       <h1 className=" ml-2 mt-2 text-white text-bold">
         {data.city}
         °C
